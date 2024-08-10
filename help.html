@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="images/HIMASTER.png" type="image/gif" sizes="16x16">
+    <title>HIMASTER | Pesanan Media Grafis | help</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <div class="card">
+        <!-- Navbar Start -->
+        <div class="card-header">
+
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid ">
+                    <!-- <h4 class="mt-2">GFG</h4> -->
+                    <nav class="navbar navbar-expand-sm navbar-light">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/HIMASTER.png" width="30" height="30"
+                                class="d-inline-block align-top" alt="logo_himaster">
+                            <span class="d-none d-md-inline "> <b style=" font-weight: 600;">Pesanan Media Grafis</b>
+                            </span>
+                        </a>
+                    </nav>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse ps-4" id="navbarcollapse">
+                        <ul class="nav nav-pills card-header-pills ">
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: black;" href="index.html" onclick="window.open('index.html','_self');" >Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: black;"
+                                href="order.html" onclick="window.open('order.html','_self');" >Pesan Desain</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active"   href="help.html" onclick="window.open('help.html','_self');" >help</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+        <!-- Navbar end -->
+
+        <div class="card-body">
+            <div class="container my-5">
+
+                <div class="d-grid gap-2 d-md-flex justify-content-center">
+                    <div class="col-md-10">
+                        <div class="d-flex position-relative">
+                            <div class="card mb-3 " style="max-width: 800px;  margin-left: auto; margin-right: auto;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="images/laptop1.png"
+                                            class="img-fluid rounded-start" alt="Caution!" width="500" height="500">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="font-size: 25px; font-weight:bold">Masukan
+                                                Anda sangat berarti bagi kami ! </h5>
+                                            <!-- <p class="card-text">Jika Anda mengalami kendala atau masalah, jangan ragu untuk memberitahu kami. Kami siap membantu dan mencari solusi bersama.</p> -->
+                                            <p class="card-text"><small class="text-body-secondary "> Jika Anda
+                                                    mengalami kendala atau masalah, jangan ragu untuk memberitahu kami.
+                                                    Kami siap membantu dan mencari solusi bersama. untuk info lebih
+                                                    lanjut terkait masalah maupun saran anda bisa mengisi form berikut
+                                                    ini.</small></p>
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                                <!-- <button class="btn btn-primary me-md-2" type="button">Button</button> -->
+
+                                                <form id="form" method="POST" action="send_whatsapp.php">
+                                                    <div class="d-grid gap-2 p-2  mx-auto">
+
+                                                        <div class="form-group">
+                                                            <label for="asal_divisi">Asal Divisi :</label>
+                                                            <input style="font-size: 15px;" type="text"
+                                                                name="asal_divisi" class="form-control "
+                                                                list="datalistOptions"
+                                                                placeholder="Isi nama divisi dengan lengkap" required>
+                                                            <datalist id="datalistOptions">
+                                                                <option value="Ketua Umum Himaster">
+                                                                <option value="Sekretaris Umum dan Kesekretariatan">
+                                                                <option value="Bendahara Umum dan Kewirausahaan">
+                                                                <option value="Kaderisasi">
+                                                                <option value="Keilmuan">
+                                                                <option value="Minat dan Bakat">
+                                                                <option value="Informasi dan Komunikasi">
+                                                            </datalist>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="deskripsi">Deskripsi :</label>
+                                                            <textarea style="font-size: 15px;" type="text"
+                                                                name="deskripsi" class="form-control " rows="4"
+                                                                placeholder="Jelaskan yang ingin anda sampaikan."
+                                                                required></textarea>
+                                                        </div>
+
+                                                        <small style="   font-size: 10px;"
+                                                            class="form-text text-muted">Kami akan menjaga kerahasiaan
+                                                            informasi yang Anda sampaikan dan tidak akan
+                                                            memberitahukannya <br> kepada orang lain tanpa izin Anda.
+                                                            Kami sangat menghargai kepercayaan yang Anda
+                                                            berikan.</small>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Kirim</button>
+
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+    // start fungsi pada tanggal pesanan dipesan
+    const now = new Date();
+    const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+    const months = [
+        'Januari',
+        'Februari',
+        'Maret',
+        'April',
+        'Mei',
+        'Juni',
+        'Juli',
+        'Agustus',
+        'September',
+        'Oktober',
+        'November',
+        'Desember',
+    ];
+
+    const dayOfWeek = days[now.getDay()];
+    const date = now.getDate();
+    const month = months[now.getMonth()];
+    const year = now.getFullYear();
+    const time = now.toLocaleTimeString('id-ID', { timeStyle: 'medium' });
+    // end fungsi pada tanggal pesanan dipesan
+
+    //  start fungsi form pada masukan dan saran
+    $(document).ready(function () {
+
+        $('#form').on('submit', function (e) {
+            e.preventDefault();
+            if ($.trim($('input[name=asal_divisi]').val()) === '' || $.trim($('textarea[name=deskripsi]').val()) === '') {
+                Swal.fire('Error', 'Harap lengkapi semua data', 'error');
+                return;
+            } else {
+                Swal.fire({
+                    position: 'top-middle',
+                    icon: 'success',
+                    title: 'Data berhasil dikirim',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+
+                var divisi = $('input[name=asal_divisi]').val(); // Replace with actual value
+                var desk = $('textarea[name=deskripsi]').val(); // Get the value from input field
+                const waktu = `${dayOfWeek}, ${date} ${month} ${year}, Pukul: ${time}`;
+                var message =
+                    " Kepada Kadiv Informasi dan Komunikasi pada hari" + " " + "*" + waktu + " " + "WIB" + "*" + " " + " " +
+                    ",saya dari" + " " + " " + "*" + divisi + "*" + " " + " " +
+                    " ingin memberikan masukan dan solusi terkait kendala dalam menggunakan website pesanan media grafis. Saya berharap masukan dan kendala tersebut dapat membantu menyelesaikan masalah bersama. Jika berkenan," +
+                    " *saya ingin menyampaikan pesan sebagai berikut.* " + " " + " \n\n " +
+                    "Deskripsi " + "\t" + ":" + " " + desk + "\n\n" +
+                    "Terima kasih atas kesempatan untuk memberikan masukan maupun kendala dari saya. " + "\n" + "Saya berharap apa yang telah saya sampaikan dapat menjadi masukan yang berguna untuk memperbaiki dan meningkatkan apa yang perlu diperbaiki untuk kemudahan bersama.";
+
+                var url = "https://wa.me/62895377232997?text=" + encodeURIComponent(message);
+
+                window.open(url, '_blank');
+                setTimeout(function () {
+                    window.location.reload();
+                }, 5000); // 10 seconds
+                // window.location.reload();
+
+            }
+
+        });
+
+    });
+	// end fungsi form pada masukan dan saran
+</script>
+
+</html>
